@@ -13,7 +13,7 @@ for (var i = 0; i < square; i++)
 }
 function onclick() {
     event.preventDefault();
-    if (!event.target.innerText) { }
+    if (!event.target.innerText) { 
     event.target.innerText = CurrentTurn;
     nextTurn();
 }
@@ -27,7 +27,12 @@ function nextTurn() {
 
         CurrentTurn = "X";
     }
+    function decalrewinner() {
+        document.getElementById("turn").innerText = "Player" + CurrentTurn+" wins!"
+    }
+    function checkforwin() {
+        if (square[0].innerText === square[1].innerText) { }
 
-
+    }
 
 }
