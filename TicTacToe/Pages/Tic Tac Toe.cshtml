@@ -1,0 +1,15 @@
+﻿@page
+@model TicTacToe.Pages.pageModel
+@{
+    ViewData["Title"] = "page";
+}
+
+<h2>Tic Tac Toe</h2>
+<div>
+@for (int i = 0; i < 9; i++)
+{
+<div id="square-@i" class="square"></div>
+}
+
+    </div>
+<>
